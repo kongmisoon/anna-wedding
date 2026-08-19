@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!--
+  index.html
+  Anna Wedding 단일 페이지(앵커 이동 방식) 메인 문서.
+  5개 섹션(메인 / 서비스 소개 / AI 추천 / 지역별 안내 / 상담 문의)을 시맨틱 태그로 구성한다.
+-->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Wedding | 웨딩 토탈 디렉팅</title>
+  <meta name="description" content="드레스·스튜디오촬영·메이크업&헤어 세 축을 중심으로 서울·대전·충청권·부산·전주 예비부부의 웨딩 준비를 연결하고 디렉팅하는 웨딩 토탈 디렉팅 서비스." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== 상단 고정 네비게이션 ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="#hero" class="brand" aria-label="Anna Wedding 홈">
+        <span class="brand-mark">Anna</span><span class="brand-sub">WEDDING</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="주요 메뉴">
+        <ul>
+          <li><a href="#hero" class="nav-link">홈</a></li>
+          <li><a href="#services" class="nav-link">서비스 소개</a></li>
+          <li><a href="#ai-recommend" class="nav-link">AI 맞춤 추천</a></li>
+          <li><a href="#regions" class="nav-link">지역별 안내</a></li>
+          <li><a href="#contact" class="nav-link">상담 문의</a></li>
+        </ul>
+        <a href="#ai-recommend" class="btn btn-gold btn-nav-cta">AI 추천 받기</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== 1. 메인(Hero) ===== -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">WEDDING TOTAL DIRECTING</p>
+        <h1 class="hero-title">
+          웨딩 준비의 3대 축을<br />
+          <em>한 번에</em> 디렉팅합니다
+        </h1>
+        <p class="hero-desc">
+          드레스 · 스튜디오촬영 · 메이크업&amp;헤어.<br />
+          예산과 취향, 지역만 알려주시면 애나웨딩이 가장 현실적인 조합을 설계해 드립니다.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#ai-recommend" class="btn btn-gold btn-lg">AI 맞춤 추천 받기</a>
+          <a href="#contact" class="btn btn-outline btn-lg">디렉터 상담 신청</a>
+        </div>
+
+        <ul class="coverage" aria-label="서비스 커버리지 지역">
+          <li>서울</li><li>대전</li><li>충청권</li><li>부산</li><li>전주</li>
+        </ul>
+
+        <dl class="hero-stats">
+          <div><dt>제휴 카테고리</dt><dd>3대 축</dd></div>
+          <div><dt>커버 지역</dt><dd>5개 권역</dd></div>
+          <div><dt>추천 소요</dt><dd>약 30초</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== 2. 서비스 소개 ===== -->
+    <section id="services" class="section section-ivory">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">OUR SERVICE</p>
+          <h2>세 가지를 따로 알아볼 필요가 없습니다</h2>
+          <p class="section-desc">
+            각각 다른 업체를 비교하느라 쓰는 시간을 줄이고, 하나의 콘셉트로 이어지는 웨딩을 만듭니다.
+          </p>
+        </header>
+
+        <div class="card-grid card-grid-3">
+          <article class="card service-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 4l5 10-5 6-5-6 5-10z"/><path d="M19 20l-8 18a14 14 0 0 0 26 0l-8-18-5 6-5-6z"/></svg>
+            </div>
+            <h3>드레스</h3>
+            <p>체형·예식장 분위기·촬영 콘셉트를 함께 고려해 대여 또는 구매 라인을 제안합니다. 가봉과 피팅 일정까지 디렉터가 함께 조율합니다.</p>
+            <ul class="check-list">
+              <li>본식 드레스 &amp; 촬영 드레스 분리 제안</li>
+              <li>지역별 제휴 부티크 피팅 예약 대행</li>
+              <li>예산대별 라인업 사전 필터링</li>
+            </ul>
+          </article>
+
+          <article class="card service-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><rect x="6" y="14" width="36" height="26" rx="4"/><circle cx="24" cy="27" r="8"/><path d="M18 14l3-6h6l3 6z"/></svg>
+            </div>
+            <h3>스튜디오 촬영</h3>
+            <p>내추럴·모던·클래식 등 원하는 톤에 맞춰 스튜디오와 촬영 구성을 매칭합니다. 원본 제공, 액자, 앨범 옵션까지 정리해 드립니다.</p>
+            <ul class="check-list">
+              <li>실내 스튜디오 · 야외 스냅 조합 설계</li>
+              <li>보정본과 원본 제공 조건 사전 안내</li>
+              <li>촬영 당일 진행 순서 디렉팅</li>
+            </ul>
+          </article>
+
+          <article class="card service-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M14 6c8 4 12 10 12 18 0 7-5 12-11 12S4 31 4 25 8 12 14 6z"/><path d="M30 20c6 3 10 8 10 14a8 8 0 0 1-16 0c0-5 3-10 6-14z"/></svg>
+            </div>
+            <h3>메이크업 &amp; 헤어</h3>
+            <p>본식과 촬영을 나눠 스타일을 설계합니다. 원장·부원장 지명, 혼주 메이크업, 리터치 여부까지 조건을 비교해 안내합니다.</p>
+            <ul class="check-list">
+              <li>본식 · 촬영 메이크업 분리 견적</li>
+              <li>혼주와 가족 메이크업 옵션 안내</li>
+              <li>출장 가능 여부 지역별 확인</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- 진행 프로세스 -->
+        <div class="process">
+          <h3 class="process-title">진행 프로세스</h3>
+          <ol class="process-list">
+            <li><span class="step-num">01</span><strong>정보 입력</strong><p>지역·예산·스타일·시기·우선순위를 입력합니다.</p></li>
+            <li><span class="step-num">02</span><strong>AI 맞춤 추천</strong><p>패키지 방향과 항목별 예산 플랜을 즉시 받아봅니다.</p></li>
+            <li><span class="step-num">03</span><strong>디렉터 상담</strong><p>결과를 바탕으로 전문 디렉터가 세부 조건을 조율합니다.</p></li>
+            <li><span class="step-num">04</span><strong>예약 &amp; 진행</strong><p>업체 예약과 일정 관리를 애나웨딩이 대행합니다.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. AI 맞춤 웨딩 추천 (핵심 기능) ===== -->
+    <section id="ai-recommend" class="section section-blush">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">AI RECOMMENDATION</p>
+          <h2>내 예산에 맞는 웨딩 패키지 찾기</h2>
+          <p class="section-desc">
+            다섯 가지만 선택하면 드레스·스튜디오·메이크업 방향과 항목별 예산 플랜을 정리해 드립니다.
+          </p>
+        </header>
+
+        <div class="ai-layout">
+          <!-- 입력 폼 -->
+          <div class="card form-card">
+            <h3 class="form-card-title">내 웨딩 정보 입력</h3>
+            <form id="recommendForm" novalidate>
+              <div class="field">
+                <label for="region">예식 지역 <span class="req">*</span></label>
+                <select id="region" name="region">
+                  <option value="">선택해 주세요</option>
+                  <option value="서울">서울</option>
+                  <option value="대전">대전</option>
+                  <option value="충청권">충청권</option>
+                  <option value="부산">부산</option>
+                  <option value="전주">전주</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="budget">
+                  총예산 <span class="req">*</span>
+                  <output class="budget-output" id="budgetOutput" for="budget">500만원</output>
+                </label>
+                <input type="range" id="budget" name="budget" min="100" max="2000" step="10" value="500" />
+                <div class="range-scale"><span>100만원</span><span>2,000만원</span></div>
+                <p class="field-hint">드레스 + 스튜디오촬영 + 메이크업&amp;헤어 합산 예산 (만원 단위)</p>
+              </div>
+
+              <div class="field">
+                <label for="style">웨딩 스타일 취향 <span class="req">*</span></label>
+                <select id="style" name="style">
+                  <option value="">선택해 주세요</option>
+                  <option value="로맨틱">로맨틱</option>
+                  <option value="모던 시크">모던 시크</option>
+                  <option value="클래식">클래식</option>
+                  <option value="내추럴">내추럴</option>
+                  <option value="럭셔리">럭셔리</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="weddingMonth">예식 예정 시기 <span class="req">*</span></label>
+                <input type="month" id="weddingMonth" name="weddingMonth" />
+              </div>
+
+              <fieldset class="field">
+                <legend>가장 중요한 항목 <span class="req">*</span></legend>
+                <div class="radio-row">
+                  <label class="radio-chip"><input type="radio" name="priority" value="드레스" /><span>드레스</span></label>
+                  <label class="radio-chip"><input type="radio" name="priority" value="스튜디오촬영" /><span>스튜디오촬영</span></label>
+                  <label class="radio-chip"><input type="radio" name="priority" value="메이크업&헤어" /><span>메이크업&amp;헤어</span></label>
+                </div>
+              </fieldset>
+
+              <!-- 클라이언트 유효성 검사 / 서버 오류 메시지 표시 영역 -->
+              <p class="form-error" id="formError" role="alert" hidden></p>
+
+              <button type="submit" class="btn btn-gold btn-block btn-lg" id="submitBtn">AI 추천 받기</button>
+              <p class="form-note">입력 정보는 추천 생성에만 사용되며 저장되지 않습니다.</p>
+            </form>
+          </div>
+
+          <!-- 결과 영역 -->
+          <div class="result-col">
+            <!-- (a) 빈 상태 -->
+            <div class="card result-card result-empty" id="resultEmpty">
+              <div class="empty-icon" aria-hidden="true">✦</div>
+              <h3>정보를 입력하면 맞춤 추천을 보여드려요</h3>
+              <p>지역·예산·스타일·시기·우선순위를 선택하고 <strong>AI 추천 받기</strong>를 눌러주세요.</p>
+            </div>
+
+            <!-- (b) 로딩 상태 -->
+            <div class="card result-card result-loading" id="resultLoading" hidden>
+              <div class="spinner" aria-hidden="true"></div>
+              <h3 id="loadingTitle">AI가 추천을 준비 중입니다…</h3>
+              <p id="loadingDesc">예산과 지역 시세를 함께 계산하고 있어요. 잠시만 기다려 주세요.</p>
+            </div>
+
+            <!-- (c) 오류 상태 -->
+            <div class="card result-card result-error" id="resultError" hidden role="alert">
+              <div class="empty-icon" aria-hidden="true">!</div>
+              <h3 id="errorTitle">추천을 불러오는 중 문제가 발생했어요</h3>
+              <p id="errorDesc">잠시 후 다시 시도해 주세요.</p>
+              <button type="button" class="btn btn-outline" id="retryBtn">다시 시도하기</button>
+            </div>
+
+            <!-- (d) 결과 상태 -->
+            <div class="result-output" id="resultOutput" hidden>
+              <div class="card result-card">
+                <p class="result-badge" id="resultBadge">추천 결과</p>
+                <h3 class="result-title" id="resultHeadline">맞춤 웨딩 패키지</h3>
+
+                <div class="rec-block">
+                  <h4><span class="rec-tag">드레스</span></h4>
+                  <p id="recDress"></p>
+                </div>
+                <div class="rec-block">
+                  <h4><span class="rec-tag">스튜디오 촬영</span></h4>
+                  <p id="recStudio"></p>
+                </div>
+                <div class="rec-block">
+                  <h4><span class="rec-tag">메이크업 &amp; 헤어</span></h4>
+                  <p id="recMakeup"></p>
+                </div>
+              </div>
+
+              <div class="card result-card">
+                <h4 class="budget-title">항목별 예산 플랜</h4>
+                <p class="budget-total" id="budgetTotal"></p>
+                <p class="budget-warning" id="budgetWarning" hidden></p>
+
+                <!-- 예산 플랜 시각화: 순수 CSS 바 차트 -->
+                <div class="budget-list" id="budgetList"></div>
+
+                <table class="budget-table">
+                  <caption class="sr-only">항목별 예상 금액과 총예산 대비 비율</caption>
+                  <thead>
+                    <tr><th scope="col">항목</th><th scope="col">예상 금액</th><th scope="col">비율</th></tr>
+                  </thead>
+                  <tbody id="budgetTableBody"></tbody>
+                  <tfoot>
+                    <tr><th scope="row">합계</th><td id="budgetSum"></td><td id="budgetSumPercent"></td></tr>
+                  </tfoot>
+                </table>
+              </div>
+
+              <div class="card result-card tip-card">
+                <h4>진행 팁</h4>
+                <p id="recTip"></p>
+                <div class="result-actions">
+                  <button type="button" class="btn btn-outline" id="againBtn">다시 추천받기</button>
+                  <button type="button" class="btn btn-gold" id="toContactBtn">이 결과로 상담 신청하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. 지역별 안내 ===== -->
+    <section id="regions" class="section section-ivory">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">REGIONAL GUIDE</p>
+          <h2>지역마다 준비 방식이 다릅니다</h2>
+          <p class="section-desc">권역별 특징과 진행 방식, 대표 파트너 유형을 확인해 보세요.</p>
+        </header>
+
+        <div class="tabs" id="regionTabs">
+          <div class="tab-list" role="tablist" aria-label="지역 선택">
+            <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-seoul" id="tab-seoul">서울</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="panel-daejeon" id="tab-daejeon">대전 · 충청권</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="panel-busan" id="tab-busan">부산</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="panel-jeonju" id="tab-jeonju">전주</button>
+          </div>
+
+          <div class="tab-panel is-active" role="tabpanel" id="panel-seoul" aria-labelledby="tab-seoul">
+            <div class="region-grid">
+              <div class="region-main">
+                <h3>서울</h3>
+                <p>선택지가 가장 많은 만큼 <strong>비교 기준을 먼저 세우는 것</strong>이 중요합니다. 청담·강남 라인은 프리미엄, 마포·서대문 라인은 합리적인 구성이 많습니다. 주말 예약이 빠르게 마감되므로 6~9개월 전 확정을 권장합니다.</p>
+              </div>
+              <ul class="region-facts">
+                <li><span>진행 방식</span><strong>드레스 투어 2~3회 + 스튜디오 사전 미팅</strong></li>
+                <li><span>대표 파트너 유형</span><strong>프리미엄 부티크 · 대형 스튜디오 · 지명 원장 샵</strong></li>
+                <li><span>권장 예산대</span><strong>450만원 이상</strong></li>
+                <li><span>예약 리드타임</span><strong>6~9개월</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-daejeon" aria-labelledby="tab-daejeon" hidden>
+            <div class="region-grid">
+              <div class="region-main">
+                <h3>대전 · 충청권</h3>
+                <p>지역 내에서 <strong>합리적인 가격에 완결형 준비</strong>가 가능한 권역입니다. 둔산·유성 중심으로 제휴사가 모여 있어 하루 안에 드레스·스튜디오·메이크업 상담을 이어서 진행할 수 있습니다. 서울 촬영을 원할 경우 촬영만 분리하는 하이브리드 구성도 자주 선택됩니다.</p>
+              </div>
+              <ul class="region-facts">
+                <li><span>진행 방식</span><strong>당일 통합 투어 + 필요 시 서울 촬영 분리</strong></li>
+                <li><span>대표 파트너 유형</span><strong>지역 밀착 부티크 · 중형 스튜디오 · 출장 메이크업</strong></li>
+                <li><span>권장 예산대</span><strong>300만원 이상</strong></li>
+                <li><span>예약 리드타임</span><strong>4~6개월</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-busan" aria-labelledby="tab-busan" hidden>
+            <div class="region-grid">
+              <div class="region-main">
+                <h3>부산</h3>
+                <p>해운대·광안리 <strong>야외 스냅과의 결합</strong>이 강점입니다. 실내 스튜디오와 바다 스냅 조합을 선택하는 커플이 많아 촬영 비중이 자연스럽게 올라갑니다. 성수기(4~5월, 9~10월) 주말은 경쟁이 치열합니다.</p>
+              </div>
+              <ul class="region-facts">
+                <li><span>진행 방식</span><strong>스튜디오 + 야외 스냅 2부 구성</strong></li>
+                <li><span>대표 파트너 유형</span><strong>스냅 특화 스튜디오 · 서면 라인 부티크 · 지명 샵</strong></li>
+                <li><span>권장 예산대</span><strong>380만원 이상</strong></li>
+                <li><span>예약 리드타임</span><strong>5~8개월</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-jeonju" aria-labelledby="tab-jeonju" hidden>
+            <div class="region-grid">
+              <div class="region-main">
+                <h3>전주</h3>
+                <p><strong>한옥마을 로케이션</strong>을 활용한 촬영이 차별점입니다. 웨딩 촬영과 한복 촬영을 함께 묶어 부대비용을 절감하는 구성이 자주 활용됩니다. 제휴사 수가 많지 않아 일정 확정을 서두르는 편이 유리합니다.</p>
+              </div>
+              <ul class="region-facts">
+                <li><span>진행 방식</span><strong>한옥 로케이션 + 스튜디오 혼합</strong></li>
+                <li><span>대표 파트너 유형</span><strong>로케이션 스튜디오 · 한복 제휴점 · 지역 메이크업 샵</strong></li>
+                <li><span>권장 예산대</span><strong>280만원 이상</strong></li>
+                <li><span>예약 리드타임</span><strong>4~6개월</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. 상담 문의 ===== -->
+    <section id="contact" class="section section-blush">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">CONTACT</p>
+          <h2>디렉터에게 직접 물어보세요</h2>
+          <p class="section-desc">영업일 기준 24시간 내에 담당 디렉터가 연락드립니다.</p>
+        </header>
+
+        <div class="contact-layout">
+          <div class="card form-card">
+            <form id="contactForm" novalidate>
+              <div class="field">
+                <label for="name">이름 <span class="req">*</span></label>
+                <input type="text" id="name" name="name" placeholder="홍길동" autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="phone">연락처 <span class="req">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label for="contactRegion">희망 지역 <span class="req">*</span></label>
+                <select id="contactRegion" name="contactRegion">
+                  <option value="">선택해 주세요</option>
+                  <option value="서울">서울</option>
+                  <option value="대전">대전</option>
+                  <option value="충청권">충청권</option>
+                  <option value="부산">부산</option>
+                  <option value="전주">전주</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">문의 내용 <span class="req">*</span></label>
+                <textarea id="message" name="message" rows="6" placeholder="예식 예정일, 관심 있는 항목, 궁금한 점을 자유롭게 적어주세요."></textarea>
+              </div>
+
+              <p class="form-error" id="contactError" role="alert" hidden></p>
+              <p class="form-success" id="contactSuccess" role="status" hidden>
+                상담 신청이 접수되었습니다. 담당 디렉터가 곧 연락드릴게요.
+              </p>
+
+              <button type="submit" class="btn btn-gold btn-block btn-lg">상담 신청하기</button>
+            </form>
+          </div>
+
+          <div class="faq">
+            <h3 class="faq-title">자주 묻는 질문</h3>
+
+            <details class="faq-item">
+              <summary>상담은 비용이 드나요?</summary>
+              <p>초기 상담과 AI 추천은 무료입니다. 실제 계약이 진행될 때만 제휴사 조건에 따른 비용이 발생합니다.</p>
+            </details>
+            <details class="faq-item">
+              <summary>지역이 다른데 서울에서 촬영할 수 있나요?</summary>
+              <p>가능합니다. 촬영만 분리하는 하이브리드 구성을 자주 진행하며, 이동 일정과 추가 비용을 사전에 정리해 안내드립니다.</p>
+            </details>
+            <details class="faq-item">
+              <summary>AI 추천 결과는 확정 견적인가요?</summary>
+              <p>아닙니다. 입력하신 예산과 지역 시세를 기준으로 한 <strong>방향 제안</strong>입니다. 실제 금액은 제휴사 조건과 시기에 따라 달라질 수 있습니다.</p>
+            </details>
+            <details class="faq-item">
+              <summary>예산이 부족하면 어떻게 하나요?</summary>
+              <p>우선순위 항목에 집중하고 나머지를 조정하는 방식을 제안드립니다. 추천 결과에도 조정이 필요한 경우 안내 문구가 함께 표시됩니다.</p>
+            </details>
+            <details class="faq-item">
+              <summary>얼마나 미리 준비해야 하나요?</summary>
+              <p>지역에 따라 다르지만 일반적으로 예식 6~9개월 전 시작을 권장합니다. 성수기 주말은 더 빠른 확정이 필요합니다.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand footer-brand"><span class="brand-mark">Anna</span><span class="brand-sub">WEDDING</span></p>
+        <p class="footer-desc">드레스 · 스튜디오촬영 · 메이크업&amp;헤어 웨딩 토탈 디렉팅</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#services">서비스 소개</a></li>
+        <li><a href="#ai-recommend">AI 맞춤 추천</a></li>
+        <li><a href="#regions">지역별 안내</a></li>
+        <li><a href="#contact">상담 문의</a></li>
+      </ul>
+      <p class="copyright">© 2026 Anna Wedding. 본 사이트는 학습용 데모 프로젝트입니다.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/ai-recommend.js" defer></script>
+</body>
+</html>
