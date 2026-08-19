@@ -39,9 +39,11 @@ anna-wedding/
 ├── api/
 │   └── recommend.py        # POST /api/recommend 서버리스 함수
 ├── tools/
-│   └── dev_server.py       # 로컬 개발 서버 (배포에는 포함되지 않음)
+│   ├── dev_server.py       # 로컬 개발 서버 (배포에는 포함되지 않음)
+│   └── capture_screenshots.py  # 제출용 스크린샷 자동 캡처
 ├── docs/
-│   └── 기획서.md            # 서비스 기획서
+│   ├── 기획서.md            # 서비스 기획서
+│   └── screenshots/        # 캡처된 스크린샷
 ├── requirements.txt        # Python 의존성 (anthropic)
 ├── vercel.json             # 함수 메모리 / 최대 실행 시간 설정
 ├── .env.local.example      # 환경 변수 템플릿 (실제 키는 .env.local에)
@@ -241,7 +243,33 @@ vercel dev
 
 ---
 
-## 10. 접근성 / 기타
+## 10. 스크린샷
+
+`docs/screenshots/` 에 저장되어 있습니다.
+
+| 파일 | 내용 |
+| --- | --- |
+| `01-desktop-full.png` | 데스크톱 전체 페이지 (1440px) |
+| `02-desktop-hero.png` | 데스크톱 메인 화면 |
+| `03-ai-result-desktop.png` | **AI 추천 기능 동작 화면** (입력 → 결과 + 예산 플랜) |
+| `04-validation-error.png` | 빈 입력 검증 (실패 처리) |
+| `05-mobile-full.png` | 모바일 전체 페이지 (375px) |
+| `06-mobile-hero.png` | 모바일 메인 화면 |
+| `07-mobile-menu.png` | 모바일 햄버거 메뉴 열림 |
+| `08-ai-result-mobile.png` | 모바일 AI 추천 결과 |
+
+재캡처하려면:
+
+```bash
+pip install playwright
+python -m playwright install chromium
+python tools/dev_server.py --mock          # 터미널 1
+python tools/capture_screenshots.py        # 터미널 2
+```
+
+---
+
+## 11. 접근성 / 기타
 
 - 시맨틱 태그(`header`, `nav`, `main`, `section`, `footer`)와 `aria-*` 속성을 적용했습니다.
 - 지역 탭은 좌우 방향키로 이동할 수 있습니다.
@@ -250,7 +278,7 @@ vercel dev
 
 ---
 
-## 11. 주의사항
+## 12. 주의사항
 
 - 이 프로젝트는 **학습용 데모**입니다. 표시되는 시세와 파트너 정보는 예시입니다.
 - 상담 문의 폼은 실제 전송 없이 클라이언트에서 접수 완료 상태만 표시합니다.
