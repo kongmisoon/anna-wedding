@@ -1,0 +1,3 @@
+# Vercel Python Serverless Function 의존성
+# anthropic: Claude API 공식 Python SDK (api/recommend.py에서 사용)
+anthropic>=0.69.0
