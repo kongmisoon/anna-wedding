@@ -55,6 +55,13 @@ body {
 
 img { max-width: 100%; height: auto; display: block; }
 
+/*
+  hidden 속성이 항상 이기도록 강제한다.
+  .result-empty 등에 display:flex 를 주면 작성자 스타일이 브라우저 기본
+  [hidden]{display:none} 을 덮어써서, JS로 hidden 을 켜도 요소가 계속 보인다.
+*/
+[hidden] { display: none !important; }
+
 h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.25; margin: 0; letter-spacing: -0.01em; }
 h4 { margin: 0; font-weight: 700; }
 p { margin: 0; }
@@ -487,7 +494,9 @@ input[type="range"]::-moz-range-thumb {
   .tab { padding: 9px 16px; font-size: .85rem; }
 
   .result-actions { flex-direction: column; }
-  .result-actions .btn { width: 100%; }
+  /* 세로 배치에서는 flex-basis가 '높이'로 해석되므로 반드시 초기화한다.
+     (데스크톱의 flex: 1 1 180px 을 그대로 두면 버튼이 180px 높이로 늘어난다) */
+  .result-actions .btn { width: 100%; flex: 0 0 auto; }
 
   .budget-table { font-size: .82rem; }
   .budget-table th, .budget-table td { padding: 9px 4px; }
