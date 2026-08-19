@@ -285,7 +285,9 @@ def call_claude(system_prompt, user_prompt):
 
     response = client.messages.create(
         model=MODEL_ID,
-        max_tokens=4000,
+        # claude-opus-5는 기본적으로 사고(thinking)가 켜져 있고 max_tokens가
+        # 사고 + 응답을 함께 제한하므로, 응답이 잘리지 않도록 여유를 둔다.
+        max_tokens=8000,
         system=system_prompt,
         # effort를 낮춰 응답 지연을 줄인다. 스키마 강제는 output_config.format으로 처리.
         output_config={
