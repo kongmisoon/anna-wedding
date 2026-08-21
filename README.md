@@ -8,6 +8,7 @@
 
 - 배포 URL: _(Vercel 배포 후 여기에 기입)_
 - 서비스 기획서: [docs/기획서.md](docs/기획서.md)
+- 최초 프롬프트 원문: [docs/최초-프롬프트.md](docs/최초-프롬프트.md)
 
 ---
 
@@ -43,6 +44,7 @@ anna-wedding/
 │   └── capture_screenshots.py  # 제출용 스크린샷 자동 캡처
 ├── docs/
 │   ├── 기획서.md            # 서비스 기획서
+│   ├── 최초-프롬프트.md      # 개발에 사용한 최초 프롬프트 원문
 │   └── screenshots/        # 캡처된 스크린샷
 ├── requirements.txt        # Python 의존성 (anthropic)
 ├── vercel.json             # 함수 메모리 / 최대 실행 시간 설정
